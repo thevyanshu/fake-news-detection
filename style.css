@@ -1,168 +1,6 @@
-body {
-  background-color: #ff9800;
-  color: white;
-  margin: 0;
-}
-
-#header {
-  background-color: #fea246; /* Grey background */
-  padding: 50px 10px; /* Some padding */
-  color: black;
-  text-align: center; /* Centered text */
-  font-size: 90px; /* Big font size */
-  font-weight: bold;
-  position: fixed; /* Fixed position - sit on top of the page */
-  top: 0;
-  width: 100%; /* Full width */
-  transition: 0.2s; /* Add a transition effect (when scrolling - and font size is decreased) */
-  font-family: 'Quicksand', sans-serif;
-}
-
-#content {
-  position: absolute;
-  height: 50px;
-  width: 300px;
-  margin-left: 170px;
-  top: 150%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  padding-bottom: 25%;
-}
-
-#content.on {
-  -webkit-animation-name: in-out;
-  animation-name: in-out;
-  -webkit-animation-duration: 0.7s;
-  animation-duration: 0.7s;
-  -webkit-animation-timing-function: linear;
-  animation-timing-function: linear;
-  -webkit-animation-iteration-count: 1;
-  animation-iteration-count: 1;
-}
-
-input {
-  box-sizing: border-box;
-  width: 50px;
-  height: 50px;
-  border: 4px solid #ffffff;
-  border-radius: 50%;
-  background: none;
-  color: #fff;
-  font-size: 16px;
-  font-weight: 400;
-  font-family: Roboto;
-  outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
-    padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.8s ease-in-out,
-    padding 0.2s;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
-}
-
-.search {
-  background: none;
-  position: absolute;
-  top: 0px;
-  left: 0;
-  height: 50px;
-  width: 50px;
-  padding: 0;
-  border-radius: 100%;
-  outline: 0;
-  border: 0;
-  color: inherit;
-  cursor: pointer;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
-  transition-duration: 0.4s;
-}
-
-.search:before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 4px;
-  background-color: #fff;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  margin-top: 26px;
-  margin-left: 17px;
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-  transition-duration: 0.4s;
-}
-
-.search:hover {
-  background-color: #fea246;
-  color: black;
-}
-
-.close {
-  -webkit-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
-  -webkit-transition-delay: 0.4s;
-  transition-delay: 0.4s;
-}
-
-.close:before {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 4px;
-  margin-top: -1px;
-  margin-left: -13px;
-  background-color: #fff;
-  -webkit-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
-}
-
-.close:after {
-  content: "";
-  position: absolute;
-  width: 27px;
-  height: 4px;
-  background-color: #fff;
-  margin-top: -1px;
-  margin-left: -13px;
-  cursor: pointer;
-  -webkit-transform: rotate(-45deg);
-  -ms-transform: rotate(-45deg);
-  transform: rotate(-45deg);
-}
-
-.square {
-  box-sizing: border-box;
-  padding: 0 40px 0 10px;
-  width: 300px;
-  height: 50px;
-  border: 4px solid #ffffff;
-  border-radius: 0;
-  background: none;
-  color: #fff;
-  font-family: Roboto;
-  font-size: 16px;
-  font-weight: 400;
-  outline: 0;
-  -webkit-transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
-    padding 0.2s;
-  transition: width 0.4s ease-in-out, border-radius 0.4s ease-in-out,
-    padding 0.2s;
-  -webkit-transition-delay: 0.4s, 0s, 0.4s;
-  transition-delay: 0.4s, 0s, 0.4s;
-  -webkit-transform: translate(-100%, -50%);
-  -ms-transform: translate(-100%, -50%);
-  transform: translate(-100%, -50%);
+html
+{
+  width: 100%;
 }
 
 
@@ -170,14 +8,6 @@ input {
 
 
 
-
-*, *:before, *:after {
-  box-sizing: border-box;
-}
-
-html {
-  font-size: 100%;
-}
 
 body {
   font-family: acumin-pro, system-ui, sans-serif;
@@ -190,10 +20,119 @@ body {
   min-height: 100vh;
 }
 
+
+#header
+{
+  height: 100px;
+  
+  background-color: rgb(255, 255, 255);
+  color: rgb(54, 54, 54);
+  position: absolute;
+  top: 0px;
+  font-size: 4.5rem;
+  /* padding-left: 50px; */
+  padding-top: 30px;
+  font-family: 'Roboto Mono', monospace;
+  width: 100%;
+}
+
+#header h4
+{
+  padding-left: 50px;
+}
+
+.container
+{
+  background: #FF4E50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F9D423, #FF4E50); 
+background: linear-gradient(to right, #F9D423, #FF4E50); 
+width: 100%;
+height: 160%;
+position: absolute;
+top: 130px;
+}
+
+.container p{
+  color: black;
+  font-size: 2rem;
+  padding: 100px 200px 0 200px;
+  line-height: 2;
+text-align: center;
+font-family: 'Inconsolata', monospace;
+font-size: 2rem;
+}
+
+
+.p1{
+  color: black;
+  font-size: 2rem;
+  padding: 100px 200px 0 200px;
+  line-height: 2;
+  font-family: 'Inconsolata', monospace;
+font-size: 3rem;
+position: relative;
+top: 10%;
+}
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+body{
+  background: #b3eaff;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #303030;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #000000;
+}
+
+.searchTerm:focus{
+  color: #000000;
+}
+
+.searchButton {
+  width: 40px;
+  height: 36px;
+  border: 3px solid #303030;
+  background: #c0f8ff;
+  text-align: center;
+  color: rgb(0, 0, 0);
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+/*Resize the wrap to see the search bar change!*/
+.wrap{
+  width: 30%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+
 .footer {
   display: flex;
   flex-flow: row wrap;
-  padding: 30px 30px 20px 30px;
+  padding: 30px 0px 20px 0px;
   color: #2f2f2f;
   background-color: #fff;
   border-top: 1px solid #e5e5e5;
@@ -216,6 +155,7 @@ body {
 .footer__logo {
   font-weight: 400;
   font-size: 1.5rem;
+  padding-left: 40px;
 }
 
 .footer__addr h2 {
@@ -292,6 +232,8 @@ body {
 .legal__links {
   display: flex;
   align-items: center;
+  position: relative;
+  right: 50px;
 }
 
 .heart {
